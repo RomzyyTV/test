@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deathloop", "Deathloop\Deathloop.csproj", "{DD38F239-55AA-4D34-9257-1428E1203936}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deathloop-NoRP", "Deathloop-NoRP\Deathloop-NoRP.csproj", "{DD38F239-55AA-4D34-9257-1428E1203936}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Deathloop.API;
+namespace Deathloop_NoRP.API;
 public class Log
 {
     public static void SendRaw(object message, ConsoleColor color) => ServerConsole.AddLog(message.ToString(), color);

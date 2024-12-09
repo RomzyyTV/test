@@ -8,8 +8,8 @@
         <ProjectGuid>{DD38F239-55AA-4D34-9257-1428E1203936}</ProjectGuid>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>Deathloop</RootNamespace>
-        <AssemblyName>Deathloop</AssemblyName>
+        <RootNamespace>Deathloop-NoRP</RootNamespace>
+        <AssemblyName>Deathloop-NoRP</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <LangVersion>12</LangVersion>
@@ -49,6 +49,7 @@
         <Reference Include="NorthwoodLib" HintPath="$(EXILED_REFERENCES)/NorthwoodLib.dll"/>
         <Reference Include="UnityEngine.CoreModule" HintPath="$(EXILED_REFERENCES)/UnityEngine.CoreModule.dll"/>
         <Reference Include="Mirror-Publicized" HintPath="$(EXILED_REFERENCES)/Mirror-Publicized.dll"/>
+        <Reference Include="HintServiceMeow-NWAPI" HintPath="$(EXILED_REFERENCES)/HintServiceMeow-NWAPI.dll"/>
     </ItemGroup>
     <ItemGroup>
         <Compile Include="API\Cassie.cs" />

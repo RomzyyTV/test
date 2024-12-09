@@ -2,7 +2,7 @@
 using PluginAPI.Core.Attributes;
 using PluginAPI.Enums;
 
-namespace Deathloop.Handler;
+namespace Deathloop_NoRP.Handler;
 public class Server_Handler
 {
     private CoroutineHandle _coroutine;

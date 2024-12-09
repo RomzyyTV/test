@@ -1,11 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MEC;
+using PlayerRoles.PlayableScps.Scp096;
 using PlayerRoles.Ragdolls;
 using PluginAPI.Core;
+using Targeting;
 using UnityEngine;
-using Cassie = Deathloop.API.Cassie;
+using Cassie = Deathloop_NoRP.API.Cassie;
 
-namespace Deathloop.Handler;
+namespace Deathloop_NoRP.Handler;
 public class IEnumerator
 {
     public static IEnumerator<float> AutoCassie()

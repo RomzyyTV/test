@@ -4,7 +4,7 @@ using PluginAPI.Core.Attributes;
 using PluginAPI.Enums;
 using PluginAPI.Events;
 
-namespace Deathloop.Handler;
+namespace Deathloop_NoRP.Handler;
 public class Player_Handler
 {
     [PluginEvent(ServerEventType.PlayerUseItem)]
@@ -25,5 +25,27 @@ public class Player_Handler
     {
         if (ev.ChangeReason is RoleChangeReason.RemoteAdmin or RoleChangeReason.None)
             ev.Player.IsGodModeEnabled = ev.NewRole == RoleTypeId.Tutorial;
+    }
+
+    [PluginEvent(ServerEventType.PlayerDying)]
+    private static void OnPlayerDying(PlayerDyingEvent ev)
+    {
+        if (ev.Attacker != null)
+        {
+            ev.Attacker.ReceiveHint($"<b>Tu as tué <color=red>{ev.Player.Nickname}</color></b>", 5f);
+            ev.Player.ReceiveHint($"<b>Tu est mort par <color=red>{ev.Attacker.Nickname}</color></b>", 5f);
+            ev.Attacker.Health = UnityEngine.Random.Range(0f, 25f);
+            return;
+        }
+        else
+        {
+            ev.Player.ReceiveHint("Tu est mort par une force <color=red>inconnue</color>", 5f);
+        }
+    }
+    
+    [PluginEvent(ServerEventType.Scp096AddingTarget)]
+    private static void OnAddingTarget(Scp096AddingTargetEvent ev)
+    {
+        ev.Target.ReceiveHint("<b>Vous avez regardé SCP-096</b>", duration: 5f);
     }
 }

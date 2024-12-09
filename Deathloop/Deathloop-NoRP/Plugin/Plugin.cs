@@ -1,13 +1,13 @@
 ﻿using System;
-using Deathloop.Handler;
+using Deathloop_NoRP.Handler;
 using PluginAPI.Core;
 using PluginAPI.Core.Attributes;
 using PluginAPI.Events;
 
-namespace Deathloop.Plugin;
+namespace Deathloop_NoRP.Plugin;
 public class Plugin
 {
-    [PluginEntryPoint("Deathloop", "1.0.0", "Plugin pour Deathloop", "RomzyyTV")]
+    [PluginEntryPoint("Deathloop-NoRP", "1.0.0", "Plugin pour Deathloop-NoRP", "RomzyyTV")]
     void Setup()
     {
         string romzyytv = @"

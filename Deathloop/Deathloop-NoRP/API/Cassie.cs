@@ -1,7 +1,7 @@
 ﻿using NorthwoodLib.Pools;
 using Respawning;
 
-namespace Deathloop.API;
+namespace Deathloop_NoRP.API;
 public class Cassie
 {
     public static void MessageTrasnlete(string message, string translation, bool IsHeld = false, bool isNoisy = false, bool isSubtitles = true)
